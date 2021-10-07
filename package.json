@@ -1,0 +1,23 @@
+{
+  "name": "gha-playground",
+  "version": "1.0.0",
+  "description": "Playground for GitHub Actions",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/havenchyk/gha-playground.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/havenchyk/gha-playground/issues"
+  },
+  "homepage": "https://github.com/havenchyk/gha-playground#readme",
+  "dependencies": {
+    "@datadog/datadog-ci": "^0.17.5"
+  }
+}
