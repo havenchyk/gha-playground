@@ -25,5 +25,5 @@ jobs:
           TEMP_DIR=$(mktemp -d)
           echo '{}' > $TEMP_DIR/fake.js
           echo '{"version":3,"file":"out.js","sourceRoot":"","sources":["fake.js"],"names":["src"],"mappings":"AAgBC"}' > $TEMP_DIR/fake.js.map
-          npx @datadog/datadog-ci sourcemaps upload $TEMP_DIR/ --service test_datadog-ci --release-version 0.0.1 --minified-path-prefix https//fake.website
+          npx @datadog/datadog-ci sourcemaps upload $TEMP_DIR/ --service test_datadog-ci --release-version 0.0.1 --minified-path-prefix https://fake.website
           rm -rf $TEMP_DIR
