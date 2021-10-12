@@ -1,0 +1,29 @@
+name: Master concurrency check
+
+on:
+  pull_request:
+    branches: [master]
+    types: [opened, synchronize]
+  push:
+    branches: [master]
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.head_ref }}
+  cancel-in-progress: true
+
+jobs:
+  main:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: checkout
+        uses: actions/checkout@v2
+
+      - name: install deps
+        run: npm ci
+
+      - name: print context variables
+        run: |
+          echo hello, world
+          echo ${{github.workflow}}-${{ github.head_ref }}
+          echo end
