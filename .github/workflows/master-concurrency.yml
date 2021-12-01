@@ -27,4 +27,4 @@ jobs:
         run: |
           echo hello, world
           echo ${{github.workflow}}-${{ github.head_ref }}
-          echo end
+          echo end!
