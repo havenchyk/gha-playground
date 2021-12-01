@@ -16,7 +16,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: havenchyk/gha-playground/./github/actions/composite@1
+      - uses: havenchyk/gha-playground/./github/actions/composite@2
       - name: checkout
         uses: actions/checkout@v2
 
