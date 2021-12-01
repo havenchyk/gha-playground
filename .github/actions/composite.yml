@@ -1,0 +1,17 @@
+name: "Composite example"
+description: "Test composite steps"
+
+inputs:
+  arg_1:
+    description: "argument 1"
+    required: true
+  arg_2:
+    description: "argument 2"
+    required: true
+
+runs:
+  using: "composite"
+  steps:
+    - uses: actions/checkout@v2
+    - run: echo "hello world"
+      shell: bash
